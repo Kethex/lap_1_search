@@ -18,19 +18,22 @@ body {
 
 #nav-bar a {
     margin-right: 20px;
+    text-decoration: none;
+}
+
+#a:hover {
+    text-decoration: underline;
 }
 
 /* MIDDLE SECTION - LOGO AND SEARCH BAR*/
 
-section {
-    margin-top: 100px;
-}
 
 #logo {
     /* margin-left: 200px; */
     /* width: 50%;
     height: 200px; */
     text-align: center;
+    margin-top: 100px;
 }
 
 /* #logo img {
@@ -44,6 +47,24 @@ section {
     text-align: center;
 } 
 
-#searchbar {
+#search-bar {
     padding-top: 10px;
+    padding-bottom: 10px;
+    width: 650px;
+    border-radius: 15px;
+}
+
+#buttons {
+    margin-top: 20px ;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 5px;
+    cursor: pointer;
+    background: rgb(233, 233, 233);
+    border-radius: 3px;
 }
