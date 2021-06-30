@@ -6,8 +6,8 @@ This was a 23hour challenge to create a Google clone, built from scratch and wit
 
 ### Installation
 -Clone or download the repo.
--Open terminal and navigate to `LAP_1_SEARCH` folder.
--Run `npm install <>` to install dependencies.
+-Open terminal and navigate to `LAP_1_SEARCH/server` folder.
+-Run `npm install <>` in the server folder to install dependencies.
 
 ### Usage
 -Run `npm start` to launch server.
