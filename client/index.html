@@ -9,21 +9,25 @@
 </head>
 <body>
     <nav id="nav-bar">
-        <a href="" class="nav-link">About</a>
-        <a href="" class="nav-link">Store</a>
-        <a href="" class="nav-link">Gmail</a>
-        <a href="" class="nav-link">Images</a>
-        <a href="" class="nav-link nav-img">9dotsicon</a>
-        <button> Sign in</button>
+        <ul>
+            <li><a href="" class="nav-link">About</a></li>
+            <li><a href="" class="nav-link">Store</a></li>
+        </ul>
+        <ul>
+            <li><a href="" class="nav-link">Gmail</a></li>
+            <li><a href="" class="nav-link">Images</a></li>
+            <li><button> Sign in</button></li>
+        </ul>
     </nav>
     <div id="logo">
         <img src="https://www.google.co.uk/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="">
     </div>
     <form method="POST">
-        <input name="searchquery" id="search-bar" type="text"></input>
-        <button type="submit" class="button" formaction="http://localhost:3000/searchquery">Google Search</div>
-        <button type="submit" class="button" formaction="http://localhost:3000/randomquery">I'm Feeling Lucky</div>
+        <input name="searchquery" placeholder="Type something here" type="text"></input>
+            <button type="submit" class="button" formaction="http://localhost:3000/searchquery">Google Search</button>
+            <button type="submit" class="button" formaction="http://localhost:3000/randomquery">I'm Feeling Lucky</button>  
     </form>
+    <div class="break"></div>
     <footer>
         <p> United Kingdom</p>
     </footer>    
