@@ -12,24 +12,24 @@ let searchterm_one = [
         url: 'catsarecool.com'
       },
       {
-        title: 'Cats Are Cool',
-        description: 'This website is all about cats and cats are cool',
-        url: 'catsarecool.com'
+        title: 'Adopt Cats',
+        description: 'Adopt cats here!',
+        url: 'catadoption.com'
       },
     {
-      title: 'Cats Are Cool',
-      description: 'This website is all about cats and cats are cool',
-      url: 'catsarecool.com'
+      title: 'Types of cat',
+      description: 'Somali, Sphinx, Short-tail, we are all here!',
+      url: 'catspecies.com'
     },
     {
-      title: 'Cats Are Cool',
-      description: 'This website is all about cats and cats are cool',
-      url: 'catsarecool.com'
+      title: 'Cat - Wikipedia',
+      description: 'Cats are a type of mammal...',
+      url: 'wikipedia.com'
     },
     {
-      title: 'Cats Are Cool',
-      description: 'This website is all about cats and cats are cool',
-      url: 'catsarecool.com'
+      title: 'Cat Games',
+      description: 'All types of cat games here!',
+      url: 'catgames.com'
     },
     {
       title: 'Cats Are Cool',
@@ -126,19 +126,19 @@ let searchterm_three = [
       url: 'boars.com'
     },
     {
-      title: 'Cats Are Cool',
-      description: 'This website is all about cats and cats are cool',
+      title: 'Lions',
+      description: 'This website is all about lions and lions are cool',
       url: 'catsarecool.com'
     },
     {
-      title: 'Cats Are Cool',
-      description: 'This website is all about cats and cats are cool',
-      url: 'catsarecool.com'
+      title: 'Jaguars',
+      description: 'This website is all about jaguars and jaguars are cool',
+      url: 'jaguars.com'
     },
     {
-      title: 'Cats Are Cool',
-      description: 'This website is all about cats and cats are cool',
-      url: 'catsarecool.com'
+      title: 'Elephants',
+      description: 'This website is all about elephants and elephants are cool',
+      url: 'elephants.com'
     },
     {
       title: 'Cats Are Cool',
