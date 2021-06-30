@@ -1,5 +1,5 @@
-const myForm = document.querySelector('form');
+const myForm = document.querySelector('#the-form');
 myForm.addEventListener("submit", e => {
     e.preventDefault();
-    let searchQuery = e.target.searchQuery;
+    const searchQuery = e.target.searchQuery;
 });

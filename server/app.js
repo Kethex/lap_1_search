@@ -163,9 +163,12 @@ let searchterm_three = [
 
 
   
-  function RandomResult () {
-    return quotes[Math.floor(Math.random() * quotes.length)]
+  function RandomResult (array) {
+    return array[Math.floor(Math.random() * array.length)]
   }
+  
+  app.use(bodyParser.urlencoded({ extended: false }));
+  app.use(bodyParser.json());
   
   app.use(cors());
 
@@ -174,6 +177,7 @@ let searchterm_three = [
   
   app.post('/searchquery', (req, res) => {
     let searchquery = req.body
+    console.log(req.params)
     if ((searchquery.searchquery).toUpperCase() == 'cats'.toUpperCase()) {
       res.send(searchterm_one)
     } else if ((searchquery.searchquery).toUpperCase() == 'apple'.toUpperCase()) {
@@ -185,14 +189,20 @@ let searchterm_three = [
     };
   });
   
+  app.post('/randomquery',  (req, res) => {
+    let searchquery = req.body
+    console.log(req.params)
+    if ((searchquery.searchquery).toUpperCase() == 'cats'.toUpperCase()) {
+      res.send(RandomResult(searchterm_one))
+    } else if ((searchquery.searchquery).toUpperCase() == 'apple'.toUpperCase()) {
+      res.send(RandomResult(searchterm_two))
+    } else if ((searchquery.searchquery).toUpperCase() == 'animal'.toUpperCase()) {
+      res.send(RandomResult(searchterm_three))
+    } else {
+      res.status(404).send('Search query not valid!')
+    };
+  });
   
-  // To do: Add handling for out-of-range index
-  app.get('/quotes/:index', (req, res) => {
-    if (req.params.index >= quotes.length) {
-      res.status(404).send('Please input a number between 1 and 15.')
-    }
-    res.send(quotes[req.params.index])});
-  
-  // To do: Get the server running
+
   let port = 3000
   app.listen(port, () => {console.log(`Listening on port ${port}...`)});
