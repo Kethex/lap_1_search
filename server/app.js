@@ -1,6 +1,9 @@
 const express = require('express')
-const app = express()
+const bodyParser = require('body-parser');
+const app = express();
 const cors = require('cors');
+app.use(cors());
+
 
 let searchterm_one = [
     {
@@ -60,12 +63,24 @@ let searchterm_three = [
   }
   
   app.use(cors());
+
+  app.use(bodyParser.urlencoded({ extended: false }));
+  app.use(bodyParser.json());
   
   app.get('/', (req, res) => res.send('Hello World!'))
   
   // To do: Create a route for retrieving all quotes
-  app.get('/results', (req, res) => {
-    res.send(quotes)
+  app.post('/searchquery', (req, res) => {
+    let searchquery = req.body
+    if ((searchquery.searchquery).toUpperCase() == 'cats'.toUpperCase()) {
+      res.send(searchterm_one)
+    } else if ((searchquery.searchquery).toUpperCase() == 'apple'.toUpperCase()) {
+      res.send(searchterm_two)
+    } else if ((searchquery.searchquery).toUpperCase() == 'animal'.toUpperCase()) {
+      res.send(searchterm_three)
+    } else {
+      res.status(404).send('Search query not valid!')
+    };
   });
   
   // To do: Create a route for retrieving a random quote
