@@ -20,6 +20,41 @@ let searchterm_one = [
       title: 'Cats Are Cool',
       description: 'This website is all about cats and cats are cool',
       url: 'catsarecool.com'
+    },
+    {
+      title: 'Cats Are Cool',
+      description: 'This website is all about cats and cats are cool',
+      url: 'catsarecool.com'
+    },
+    {
+      title: 'Cats Are Cool',
+      description: 'This website is all about cats and cats are cool',
+      url: 'catsarecool.com'
+    },
+    {
+      title: 'Cats Are Cool',
+      description: 'This website is all about cats and cats are cool',
+      url: 'catsarecool.com'
+    },
+    {
+      title: 'Cats Are Cool',
+      description: 'This website is all about cats and cats are cool',
+      url: 'catsarecool.com'
+    },
+    {
+      title: 'Cats Are Cool',
+      description: 'This website is all about cats and cats are cool',
+      url: 'catsarecool.com'
+    },
+    {
+      title: 'Cats Are Cool',
+      description: 'This website is all about cats and cats are cool',
+      url: 'catsarecool.com'
+    },
+    {
+      title: 'Cats Are Cool',
+      description: 'This website is all about cats and cats are cool',
+      url: 'catsarecool.com'
     }];
 
 let searchterm_two = [
@@ -37,6 +72,41 @@ let searchterm_two = [
       title: 'Types of apples',
       description: 'Various apples exist.',
       url: 'typesofapples.com'
+    },
+    {
+      title: 'Cats Are Cool',
+      description: 'This website is all about cats and cats are cool',
+      url: 'catsarecool.com'
+    },
+    {
+      title: 'Cats Are Cool',
+      description: 'This website is all about cats and cats are cool',
+      url: 'catsarecool.com'
+    },
+    {
+      title: 'Cats Are Cool',
+      description: 'This website is all about cats and cats are cool',
+      url: 'catsarecool.com'
+    },
+    {
+      title: 'Cats Are Cool',
+      description: 'This website is all about cats and cats are cool',
+      url: 'catsarecool.com'
+    },
+    {
+      title: 'Cats Are Cool',
+      description: 'This website is all about cats and cats are cool',
+      url: 'catsarecool.com'
+    },
+    {
+      title: 'Cats Are Cool',
+      description: 'This website is all about cats and cats are cool',
+      url: 'catsarecool.com'
+    },
+    {
+      title: 'Cats Are Cool',
+      description: 'This website is all about cats and cats are cool',
+      url: 'catsarecool.com'
     }];
 
 let searchterm_three = [
@@ -54,6 +124,41 @@ let searchterm_three = [
       title: 'Boars',
       description: 'This website is all about boars and boars are cool',
       url: 'boars.com'
+    },
+    {
+      title: 'Cats Are Cool',
+      description: 'This website is all about cats and cats are cool',
+      url: 'catsarecool.com'
+    },
+    {
+      title: 'Cats Are Cool',
+      description: 'This website is all about cats and cats are cool',
+      url: 'catsarecool.com'
+    },
+    {
+      title: 'Cats Are Cool',
+      description: 'This website is all about cats and cats are cool',
+      url: 'catsarecool.com'
+    },
+    {
+      title: 'Cats Are Cool',
+      description: 'This website is all about cats and cats are cool',
+      url: 'catsarecool.com'
+    },
+    {
+      title: 'Cats Are Cool',
+      description: 'This website is all about cats and cats are cool',
+      url: 'catsarecool.com'
+    },
+    {
+      title: 'Cats Are Cool',
+      description: 'This website is all about cats and cats are cool',
+      url: 'catsarecool.com'
+    },
+    {
+      title: 'Cats Are Cool',
+      description: 'This website is all about cats and cats are cool',
+      url: 'catsarecool.com'
     }];
 
 
@@ -64,12 +169,9 @@ let searchterm_three = [
   
   app.use(cors());
 
-  app.use(bodyParser.urlencoded({ extended: false }));
-  app.use(bodyParser.json());
   
   app.get('/', (req, res) => res.send('Hello World!'))
   
-  // To do: Create a route for retrieving all quotes
   app.post('/searchquery', (req, res) => {
     let searchquery = req.body
     if ((searchquery.searchquery).toUpperCase() == 'cats'.toUpperCase()) {
@@ -83,10 +185,6 @@ let searchterm_three = [
     };
   });
   
-  // To do: Create a route for retrieving a random quote
-  app.get('/quotes/random', (req, res) => {
-    res.send(RandomResult())
-  })
   
   // To do: Add handling for out-of-range index
   app.get('/quotes/:index', (req, res) => {
